@@ -1,0 +1,226 @@
+.footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.footer-main {
+    display: flex;
+    flex: 1;
+    padding: 20px 0px;
+    width:95%;
+    margin: auto;
+}
+
+.footer-main a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-main h2 {
+    margin-bottom: 20%;
+    font-size: 30px;
+    font-family: 'Bungee Spice', cursive;
+}
+.footer-main .row1 {
+    flex: 0.5;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.contact-form form span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form form span input {
+    width: 45%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.contact-form textarea {
+    height: 40px;
+    border-radius: 5px;
+    max-width: 500px;
+    max-height: 150px;
+    min-height: 30px;
+    min-width: 300px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.contact-form .flat-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: aqua;
+    box-shadow: 0px 0px 15px 10px #263f40;
+}
+.footericon {
+    display: flex;
+    flex-direction: row;
+}
+.footericon span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid gray;
+    margin-right:5px;
+    border-radius: 40%;
+}
+.footericon span:hover {
+    background-color: whitesmoke;
+    border: 1px solid aqua;
+}
+.footer-main .row2 {
+    flex: 0.25;
+    text-align: center;
+
+}
+.row2 span {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-main .row3 {
+    flex: 0.25;
+    text-align: center;
+}
+.row3 span {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-submain-one {
+    width:95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.submain-one-left {
+    display: flex ;
+    flex-direction: row ;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-submain-one .submain-one-left a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+ .submain-one-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.submain-one-right span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.footer-arrow {
+    padding-left: 10px;
+}
+
+hr {
+    color: gray;
+}
+
+.footer-submain-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.footer-submain-two a {
+    padding: 0px 3px ;
+    color: aqua;
+    text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+    .footer-main {
+        flex-direction: column;
+    }
+    .footer-main h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .footer-main a {
+        font-size: 16px;
+    }
+    .row1 p {
+        font-size: 14px;
+    }
+    .footericon {
+        justify-content: center;
+    }
+    .footer-submain-one {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .submain-one-left {
+        gap: 10px;
+
+    }
+    .footer-submain-one .submain-one-left a {
+        font-size: 12px;
+    }
+    .footer-submain-two {
+        font-size: 12px;
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .footer-main h2 {
+        font-size: 24px;
+    }
+    .footer-main a {
+        font-size: 16px;
+    }
+    .footer-submain-one {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .submain-one-left {
+        gap: 10px;
+
+    }
+    .footer-submain-one .submain-one-left a {
+        font-size: 15px;
+    }
+    .footer-submain-two {
+        font-size: 15px;
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+}

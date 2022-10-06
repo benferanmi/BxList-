@@ -1,0 +1,135 @@
+.main-navbar {
+    display: flex;
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-left img {
+    width: 40px;
+    height: 40px;
+}
+.navbar-left h2 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-menu {
+    display: flex;
+}
+.navbar-menu a {
+    text-decoration: none ;
+    color: rgb(217, 217, 217);
+    margin-right: 40px;
+}
+.navbar-menu a:hover {
+    color: white;
+}
+
+.navbar-others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-others .others1 {
+    margin-right : 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-others .others1:hover {
+    color: #4ffef3;
+}
+.navbar-others .others2 {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+.navbar-others button {
+    background-color: black;
+}
+
+.menu-list {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    background-color: #f3eded;
+    color: black;
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    width: 100px;
+}
+.menu-list .menu-ul li {
+    list-style: none;
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.menu-list .menu-ul li a {
+    text-decoration: none;
+    color: black;
+}
+.mobilemenu{
+    display: none;
+} 
+@media screen and (max-width: 700px) {
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-others{
+        display: none;
+    }
+    .mobilemenu {
+        display: block;
+    }
+    .menu-list {
+        display: none;
+    }
+    .profilemenu {
+        width: 100px;
+        position:absolute;
+        top: 15%;
+        right: 2%;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    .profilemenu a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .profilemenu .links {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    .navbar-menu a {
+        margin-right: 10px;
+    }
+}

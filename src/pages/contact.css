@@ -1,4 +1,4 @@
-.contact {
+.contacts {
     color: black;
     padding-top: 100px;
 }
@@ -26,7 +26,7 @@
 }
 .contact-top-cont .cont1, .cont2 {
     flex: calc(0.9/3);
-    padding: 0px 70px;
+    padding: 0px 5%;
     padding-top: 50px;
     box-shadow: 0px 12px 18px -2px gray;
     border-top: 8px solid aqua;
@@ -50,6 +50,10 @@
     width: 100%;
     margin-top: 60px;
     background-color: white;
+}
+
+.sales {
+    margin-top :100px !important;
 }
 .cont1 .contact-button-light a {
     text-decoration: none;
@@ -89,7 +93,7 @@
     background: linear-gradient(25deg, blue, aqua);
     display: flex;
     flex-direction: row;
-    padding: 0px 20%;
+    padding: 0px 10%;
     flex: 1;
     justify-content: space-between;
 }
@@ -196,7 +200,7 @@
     
 }
 
-@media screen and (min-width:561) and (max-width: 800px) {
+@media screen and (min-width:561px) and (max-width: 800px) {
     .contact {
         padding-top: 50px;
     }
@@ -213,6 +217,32 @@
     .contact-top-cont {
         flex-direction: column;
         width: 80%;
+        margin: auto;
+        gap: 40px;
+    }
+    .contact-top-cont .cont1, .cont2 {
+        box-shadow: 0px -12px 18px -2px grey;
+    }
+    .contact-bottom {
+        flex-direction: column;
+        gap: 50px;
+        height: 800px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        justify-content: space-evenly;
+    }
+    .contact-bottom-left {
+        margin-top: 100px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width: 1000px) {
+    .contact-top-cont {
+        flex-direction: column;
+        width: 70%;
         margin: auto;
         gap: 40px;
     }

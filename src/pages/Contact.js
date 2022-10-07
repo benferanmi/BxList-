@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <>
     <NavBars />
-    <div className='contact'>
+    <div className='contacts'>
         <div className='contact-top'>
             <div className='contact-top-head'>
                 <h1>Contact Us</h1>
@@ -49,7 +49,7 @@ const Contact = () => {
                         Get in touch with our sales team to see how we can work together.
                     </p>
 
-                    <button type="button" className='contact-button-light'>
+                    <button type="button" className='contact-button-light sales'>
                     <Link to="dev">Sales</Link>
                     </button>
                 </div>

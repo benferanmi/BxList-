@@ -133,13 +133,13 @@ const Footer = () => {
         </div>
         <div className="row2">
           <h2>Links To pages</h2>
-          <span><NavLink exact="true" activeclassname="active" className="home">
+          <span><NavLink exact="true" to="/" activeclassname="active" className="home">
             Home
           </NavLink>
           <NavLink exact="true" to="store" activeclassname="active" className="store">
             Store
           </NavLink>
-          <NavLink exact="true" to="contact" activeclassname="active" className="contact">
+          <NavLink exact="true" activeclassname="active" className="contact">
             Contact
           </NavLink>
           <NavLink exact="true" to="services" activeclassname="active" className="services">

@@ -35,16 +35,16 @@ const NavBars = () => {
       return (
         <>
         <nav className="profilemenu">
-          <NavLink exact="true" activeclassname="active" className='home'>
+          <NavLink exact="true" to="/" activeclassname="active" className='home'>
             Home
           </NavLink>
-          <NavLink exact="true" activeclassname="active" className='store'>
+          <NavLink exact="true" to="store" activeclassname="active" className='store'>
             Store
           </NavLink>
-          <NavLink exact="true" activeclassname="active" className='contact'>
+          <NavLink exact="true" to="contact" activeclassname="active" className='contact'>
             Contact
           </NavLink>
-          <NavLink exact="true" activeclassname="active" className='services'>
+          <NavLink exact="true" to="serices" activeclassname="active" className='services'>
             Services
           </NavLink>
           < div className="links">

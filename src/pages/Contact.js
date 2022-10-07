@@ -43,7 +43,7 @@ const Contact = () => {
                     </button>
                     <span>submit a request</span>
                 </div>
-                <div className='cont1'>
+                <div className='cont1 cont-can'>
                     <h3>Sales</h3>
                     <p>
                         Get in touch with our sales team to see how we can work together.

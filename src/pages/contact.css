@@ -158,27 +158,42 @@
 }
 
 @media screen and (max-width: 560px) {
-    .contact {
+    .contacts {
         padding-top: 50px;
     }
     .contact-top {
         width: 97%;
     }
     .contact-top-head h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .contact-top-head p {
         letter-spacing: 1.5px;
-        font-size: 18px;
+        font-size: 15px;
     }
     .contact-top-cont {
         flex-direction: column;
         width: 60%;
         margin: auto;
-        gap: 40px;
+        gap: 60px;
     }
     .contact-top-cont .cont1, .cont2 {
         box-shadow: 0px -12px 18px -2px grey;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .cont1 .contact-button-light {
+        margin-top: 15px;
+    }
+    .cont2 .contact-button-deep {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .cont-can {
+        margin-top: 0px !important;
+    }
+    .sales {
+        margin-top: 10px !important;
     }
     .contact-bottom {
         flex-direction: column;
@@ -191,17 +206,18 @@
         justify-content: space-evenly;
     }
     .contact-bottom-left {
-        margin-top: 100px;
+        margin-top: 40px;
         align-items: center;
     }
     .contact-form input {
         width: 100%;
+        gap: 10px;
     }
     
 }
 
 @media screen and (min-width:561px) and (max-width: 800px) {
-    .contact {
+    .contacts {
         padding-top: 50px;
     }
     .contact-top {

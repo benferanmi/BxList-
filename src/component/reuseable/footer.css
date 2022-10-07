@@ -196,6 +196,13 @@ hr {
         margin: auto;
         text-align: center;
     }
+    .contact-form .flat-button {
+        margin-top: 10px;
+    }
+    .contact-form form span {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 701px) and (max-width: 900px) {

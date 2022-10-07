@@ -51,7 +51,6 @@
 
 .banner-right {
     position: relative;
-    right: 20%;
 }
 .banner-right img {
     position: absolute;
@@ -127,5 +126,12 @@
     
     .banner-right img {
         width: 35rem;
+    }
+}
+
+@media screen and (min-width:1151px) and (max-width: 1350px) {
+    .banner-right {
+      right: 17% ;
+
     }
 }

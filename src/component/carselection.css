@@ -28,6 +28,17 @@
     top: 1.5%;
     right: 5%;
     position: absolute;
+    
+}
+.grid-styles button {
+    margin-right: 10px;
+    height: 30px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
 }
 .sectionone-submainone {
     display: grid;
@@ -129,6 +140,9 @@
     .search-wrapper {
         width: 80%;
     }
+    .grid-styles {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 551px) and (max-width: 800px) {
@@ -138,7 +152,16 @@
     .search-wrapper {
         width: 70%;
     }
+    .grid-styles{
+        display: none;
+    }
 }
+@media screen and (min-width: 801px) and (max-width: 1020px) {
+    .grid-styles .button3 {
+        display: none;
+    }
+}
+
 .sectionone-main {
     display: grid;
 }
@@ -164,6 +187,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 .sectionone {
     display: flex;

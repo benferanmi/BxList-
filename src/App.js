@@ -2,7 +2,7 @@ import Layout from './Layout';
 import React from 'react';
 import {Route, Routes} from 'react-router-dom'
 import Contact from './pages/Contact';
-import Map from './component/reuseable/Map';
+import Profile from './pages/Profile';
 
 
 function App() {
@@ -11,8 +11,7 @@ function App() {
       <Routes>
           <Route path='/' element={ <Layout/>} />
           <Route path='contact' element={ <Contact/>} />
-          <Route path='map' element={ <Map/>} />
-
+          <Route path='profile' element={ <Profile />} />
       </Routes>
     </>
   );

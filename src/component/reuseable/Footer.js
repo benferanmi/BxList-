@@ -1,7 +1,5 @@
 import React from "react";
-import { useRef } from "react";
 import "./footer.css";
-import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -14,33 +12,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
+import Newsletter from "./Newsletter";
 
 const Footer = () => {
-  const refFrom = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_sj47dpj",
-        "template_g20nlx9",
-        refFrom.current,
-        "mW8WFQdas_Oc08y-M"
-      )
-      .then(
-        () => {
-          alert("Message sucessfully sent!");
-          console.log("sucess");
-          window.location.reload(false);
-        },
-        () => {
-          alert("Failed to send the message, Please try again ");
-          console.log("failed");
-        }
-      );
-  };
-
   return (
     <div className="footer">
       <div className="footer-main">
@@ -49,37 +23,7 @@ const Footer = () => {
           <p>
             Sign up for the latest cars models, products samples and details
           </p>
-
-          <div className="contact-form">
-            <form ref={refFrom} onSubmit={sendEmail}>
-              <span>
-                <input
-                  className="half"
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
-
-                <input
-                  className="half"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </span>
-
-              <textarea
-                placeholder="Message"
-                name="message "
-                required
-              ></textarea>
-
-              <input type="submit" className="flat-button" value="SIGN UP" />
-            </form>
-          </div>
-
+            <Newsletter />
           <p>
             This site is intended for Us car dealers. By signing up, you
             understand and agree that your data will be collected and used to

@@ -48,7 +48,7 @@ const NavBars = () => {
             Services
           </NavLink>
           < div className="links">
-        <Link to="/">
+        <Link to="cart">
          <FontAwesomeIcon  icon={faCartPlus} color="#fff" className="others1" />
         </Link>
         <Link to="/">
@@ -57,7 +57,7 @@ const NavBars = () => {
         <Link to="/">
         <FontAwesomeIcon  icon={faGear} color="#fff" className="others1 spa" />
         </Link> 
-        <Link to="/">
+        <Link to="profile">
         <FontAwesomeIcon  icon={faUserCircle} color="#fff" className="others2"  />
         </Link>
         </div>
@@ -114,7 +114,7 @@ const NavBars = () => {
       </div>
 
       <div className="navbar-others">
-        <Link to="/">
+        <Link to="cart">
          <FontAwesomeIcon  icon={faCartPlus} color="#fff" className="others1" />
         </Link>
         <Link to="/">

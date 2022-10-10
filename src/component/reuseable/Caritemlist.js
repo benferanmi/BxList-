@@ -1,13 +1,13 @@
 import {
   faGrip,
-  faGripHorizontal,
   faGripVertical,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
-const Caritemlist = ({ props, items }) => {
+const Caritemlist = ({ props, items, handleCart }) => {
   //styles usestate for grid changing options
   const [gridStyle, setgridStyle] = useState("sectionone-submain");
   const changeStyleOne = () => {
@@ -34,14 +34,11 @@ const Caritemlist = ({ props, items }) => {
               <p>{currentItems.class}</p>
               <p>{currentItems.start_production}</p>
             </span>
+
+            <div className="cart-buttons">
+              <button type="button" onClick={() => handleCart(currentItems)}>Add to cart</button>
+            </div>
           </div>
-          // <ul key={currentItems.title}>
-          //  <div className='car-list-li'>
-          //  <li><img src={currentItems.image} alt={currentItems.title + "image"}/></li>
-          //   <li>{currentItems.class}</li>
-          //   <li>{currentItems.discription}</li>
-          //  </div>
-          // </ul>
         ))}
       </div>
 
@@ -59,5 +56,11 @@ const Caritemlist = ({ props, items }) => {
     </div>
   );
 };
+
+Caritemlist.propTypes = {
+  image:PropTypes.object.isRequired,
+  class:PropTypes.object.isRequired,
+  title:PropTypes.object.isRequired
+}
 
 export default Caritemlist;

@@ -51,10 +51,10 @@ const NavBars = () => {
         <Link to="cart">
          <FontAwesomeIcon  icon={faCartPlus} color="#fff" className="others1" />
         </Link>
-        <Link to="/">
+        <Link to="notification">
         <FontAwesomeIcon  icon={faBell} color="#fff" className="others1" />
         </Link> 
-        <Link to="/">
+        <Link to="settings">
         <FontAwesomeIcon  icon={faGear} color="#fff" className="others1 spa" />
         </Link> 
         <Link to="profile">
@@ -117,13 +117,13 @@ const NavBars = () => {
         <Link to="cart">
          <FontAwesomeIcon  icon={faCartPlus} color="#fff" className="others1" />
         </Link>
-        <Link to="/">
+        <Link to="notification">
         <FontAwesomeIcon  icon={faBell} color="#fff" className="others1" />
         </Link> 
-        <Link to="/">
+        <Link to="settings">
         <FontAwesomeIcon  icon={faGear} color="#fff" className="others1 spa" />
         </Link> 
-        <Link to="/">
+        <Link to="profile">
         <FontAwesomeIcon  icon={faUserCircle} color="#fff" className="others2"  />
         </Link>
         <button type="button" onClick={DesktopMenuHandler}>

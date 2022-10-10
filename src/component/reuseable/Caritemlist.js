@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState } from "react";
 import PropTypes from 'prop-types';
+import defaultImage from '../../assets/image/lsams.png'
 
 const Caritemlist = ({ props, items, handleCart }) => {
   //styles usestate for grid changing options
@@ -19,20 +20,20 @@ const Caritemlist = ({ props, items, handleCart }) => {
   const changeStyleThree = () => {
     setgridStyle("sectionone-submainthree");
   };
-
+  const newId = new Date().getDate().toString()
   return (
     <div>
       <div className={gridStyle}>
         {items.map((currentItems) => (
-          <div key={currentItems.title} className="sectionone">
+          <div key={currentItems.title || newId} className="sectionone">
             <img
-              src={currentItems.image}
-              alt={`${currentItems.title}/ ${currentItems.class}`}
+              src={currentItems.image || defaultImage}
+              alt={`${currentItems.title|| "missing"}/ ${currentItems.class || "missing"}`}
             />
             <span>
-              <h1>{currentItems.title}</h1>
-              <p>{currentItems.class}</p>
-              <p>{currentItems.start_production}</p>
+              <h1>{currentItems.title || "missing title"}</h1>
+              <p>{currentItems.class || "missing class"}</p>
+              <p>{currentItems.start_production || 'missing start pro'}</p>
             </span>
 
             <div className="cart-buttons">
@@ -57,10 +58,10 @@ const Caritemlist = ({ props, items, handleCart }) => {
   );
 };
 
-Caritemlist.propTypes = {
-  image:PropTypes.object.isRequired,
-  class:PropTypes.object.isRequired,
-  title:PropTypes.object.isRequired
-}
+// Caritemlist.propTypes = {
+//   image:PropTypes.object.isRequired,
+//   class:PropTypes.object.isRequired,
+//   title:PropTypes.object.isRequired
+// }
 
 export default Caritemlist;

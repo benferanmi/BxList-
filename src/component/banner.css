@@ -54,7 +54,7 @@
     position: relative;
 }
 .banner-right img {
-    position: absolute;
+    /* position: absolute; */
     margin-top: 130px;
   
 }
@@ -128,7 +128,7 @@
     
     .banner-right img {
         width: 35rem;
-        margin-top: 5%;
+        margin-top: -7%;
     }
 }
 

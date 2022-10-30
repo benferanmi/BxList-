@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./carselection.css";
 import Caritemlist from "./reuseable/Caritemlist";
 import Pagination from "./reuseable/Pagination";
@@ -30,13 +30,13 @@ const CarListSection = () => {
   //carts
   const [cart, setCart] = useState([]);
 
-  const handleCart = (currentItems) => {
+  const handleCart = useCallback((currentItems) => {
     if (cart.indexOf(currentItems) !== -1) return 
        setCart([...cart, currentItems])
     localStorage.setItem('carts', JSON.stringify([...cart, currentItems]))
     console.log(cart)
    
-  };
+  }, [cart]);
 
   //code for the pagation below
 

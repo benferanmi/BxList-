@@ -8,7 +8,7 @@ import { useState } from "react";
 import PropTypes from 'prop-types';
 import defaultImage from '../../assets/image/lsams.png'
 
-const Caritemlist = ({ props, items, handleCart }) => {
+const Caritemlist = React.memo(({ props, items, handleCart }) => {
   //styles usestate for grid changing options
   const [gridStyle, setgridStyle] = useState("sectionone-submain");
   const changeStyleOne = () => {
@@ -56,7 +56,7 @@ const Caritemlist = ({ props, items, handleCart }) => {
       </div>
     </div>
   );
-};
+});
 
 // Caritemlist.propTypes = {
 //   image:PropTypes.object.isRequired,
